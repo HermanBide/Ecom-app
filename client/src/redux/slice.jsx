@@ -18,6 +18,8 @@ export const productSlice = createSlice({
       } else {
         state.products.push(action.payload);
       }
+      alert("Item was added to cart")
+
     },
     increaseQuantity: (state, action) => {
       const item = state.products.find(
