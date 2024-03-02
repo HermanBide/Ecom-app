@@ -48,7 +48,7 @@ const Product = (props) => {
     <ul className="flex items-center justify-evenly p-4 border-t border-b border-gray-200">
       <li
         className="text-gray-700 hover:text-primary cursor-pointer"
-        onClick={() => dispatch(
+        onClick={() => { dispatch(
           addToCart({
             _id: props._id,
             name: props.productName,
@@ -58,7 +58,9 @@ const Product = (props) => {
             price: props.price,
             colors: props.color,
           })
-        )}
+        )
+        alert(`${props.productName} has been added to the cart.`);
+        }}
       >
         <FaShoppingCart />
         <span className="ml-1">Add to Cart</span>
