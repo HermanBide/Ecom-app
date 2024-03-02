@@ -46,6 +46,7 @@ const App = () => {
         <Route path="/paymentgateway" element={<Payment />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/ItemCard" element={<ItemCard />} />
       </Routes>
       <Footer />
       <FooterBottom />
